@@ -1,0 +1,319 @@
+/* Navbar */
+/* Navbar layout */
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search */
+.searchbox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 8px 15px;
+  gap: 10px;
+  width: 800px;
+}
+.inputbox {
+  outline: none;
+  border: none;
+  width: 1000px;
+}
+
+/* LOGIN DROPDOWN FIX */
+.login-wrapper {
+  position: relative;
+}
+
+.login-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  width: 170px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.login-dropdown p {
+  padding: 12px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-dropdown p:hover {
+  background: #f2f2f2;
+}
+
+/* 3 dot menu */
+.menu-wrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 150px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.dropdown p {
+  padding: 12px;
+  cursor: pointer;
+}
+.dropdown p:hover {
+  background: #eee;
+}
+
+.inputbox {
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+
+
+.foodimages::-webkit-scrollbar {
+  display: none;
+}
+
+.img-card {
+  text-align: center;
+}
+
+.circle-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+
+/* FlavorHut Text */
+.heading {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ffcc00, #ff6699, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Search box */
+
+
+.searchicon {
+  font-size: 20px;
+  color: #555;
+}
+
+.inputbox {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #ff4500;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff6520;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.seller {
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.seller:hover {
+  color: #ff4500;
+}
+
+/* Login Dropdown */
+.login-container {
+  position: relative;
+}
+
+
+
+
+
+
+/* 3 Dots Menu */
+.menu-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.dots {
+  font-size: 22px;
+}
+/* Make login-dropdown sit above navbar content without blocking everything */
+
+
+/* Navbar flex split */
+
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.foodimages {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+
+
+/* Image Card */
+.img-card {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+/* Arrow Buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-arrow {
+  left: 5px;
+}
+
+.right-arrow {
+  right: 5px;
+}
+
+.arrow:hover {
+  background: #f0f0f0;
+}
+
+.seller-link {
+  background: none;
+  border: none;
+  color: #333;                /* text color */
+  font-size: 16px;            /* bigger text */
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;                   /* space between icon & text */
+}
+
+.seller-link:hover {
+  color: #ff6f00;             /* hover effect */
+}
+
+.seller-icon {
+  font-size: 18px;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.left-nav { display:flex; gap:16px; align-items:center; }
+.right-nav { display:flex; gap:12px; align-items:center; }
+
+/* Search */
+.searchbox { display:flex; gap:8px; align-items:center; padding:6px 10px; border-radius:20px; border:1px solid #ddd; }
+.inputbox { border:none; outline:none; width:220px; }
+
+/* Buttons */
+.btn { background:#ff4500; color:#fff; padding:8px 12px; border-radius:6px; border:none; display:flex; gap:8px; align-items:center; cursor:pointer; }
+.btn:hover { opacity:0.95; }
+
+/* Seller link (text-like) */
+.seller-link { background:none; border:none; color:#333; cursor:pointer; display:flex; gap:8px; align-items:center; font-weight:500; font-size:15px; }
+.seller-link:hover { color:#ff6f00; }
+.seller-icon { font-size:18px; }
+
+/* dropdown positioning (key part) */
+.login-wrapper, .menu-wrapper { position: relative; }
+.login-dropdown, .dropdown {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.12);
+  width: 180px;
+  z-index: 1100;
+}
+.login-dropdown p, .dropdown p { padding:10px 14px; cursor:pointer; display:flex; gap:8px; align-items:center; margin:0; }
+.login-dropdown p:hover, .dropdown p:hover { background:#f5f5f5; }
+

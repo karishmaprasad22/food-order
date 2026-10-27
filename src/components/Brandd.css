@@ -1,0 +1,53 @@
+.brand-section {
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.brand-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Arrow buttons */
+.brand-arrow {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+
+.left-arrow { left: 15px; }
+.right-arrow { right: 15px; }
+
+/* Horizontal scrolling container */
+.brand-container {
+  display: flex;
+  overflow-x: hidden;
+  padding: 10px 50px;
+  scroll-behavior: smooth;
+  gap: 8%;
+}
+
+/* Circular logos with hover effect */
+.brand-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ddd;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.08);
+}

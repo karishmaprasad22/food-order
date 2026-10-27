@@ -1,0 +1,69 @@
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Slider */
+.banner-slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Full-width image */
+.banner-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Arrows */
+.banner-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.banner-arrow.left { 
+  left: 20px; 
+}
+.banner-arrow.right { 
+  right: 20px; 
+}
+
+/* Dots */
+.banner-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #d1d1d1;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #2874f0;
+  width: 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+}

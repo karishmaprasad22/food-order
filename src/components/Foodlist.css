@@ -1,0 +1,85 @@
+.demoFoods-section {
+  padding: 40px 60px;
+}
+.demoFoods-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.demoFoods-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.demoFoods-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.demoFoods-card:hover {
+  transform: scale(1.02);
+}
+
+.demoFoods-img {
+  width: 110%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+.offer-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0077ff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.demoFoods-info {
+  padding: 15px;
+}
+
+.demoFoods-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.demoFoods-desc {
+  color: gray;
+  margin-top: 3px;
+}
+
+.demoFoods-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.demoFoods-price {
+  font-weight: bold;
+}
+
+.demoFoods-time {
+  color: #555;
+}
+
+.rating-box {
+  background: #2ecc71;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 8px;
+}
